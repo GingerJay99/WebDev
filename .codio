@@ -1,0 +1,14 @@
+{
+    // This file is used to configure the three buttons along Codio's top menu.
+   
+// Run button configuration
+  "commands": {
+        "Node version": "node --version"
+  },
+
+// Preview button configuration
+  "preview": {
+        "Box URL": "http://{{domain8080}}/",
+        "Box URL SSL": "https://{{domain8080}}/"
+  }
+}

@@ -1,0 +1,22 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <title>Warning - Wrong Address</title> 
+</head> 
+<body> 
+    <div id="warning">
+        
+    </div>
+<script> 
+    var currentlocation = window.location.href;
+    var currentsplit = currentlocation.split('.');
+    var shouldbe = currentsplit[0]+"-8080."+currentsplit[1]+"."+currentsplit[2]
+    document.getElementById("warning").innerHTML =
+"<h3> Warning you are visiting a static page at  " + window.location.href +"</h3>"
+    +"<h3>you should be visiting your dynamic pages at <a href='"+shouldbe+"'>"+shouldbe+"</a></h3>"
+        +"<p>If this isn't working and you get a server error you need to start your server (either node SimpleServer or your own server) from the codio terminal</p>"
+    
+    
+</script> 
+</body> 
+</html> 
